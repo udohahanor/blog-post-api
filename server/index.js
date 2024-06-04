@@ -8,7 +8,7 @@ const blogRoutes = require('./routes/blogRouter');
 
 //DOTENV const
 const PORT = 3000 || process.env.PORT;
-const MONGO_URI = process.env.MONGO_URI;
+const MONGO_URI = 'mongodb+srv://udohahanor:password1234@cluster0.ikwyxxr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 //ExpressMiddleware
 app.use(express.json());
