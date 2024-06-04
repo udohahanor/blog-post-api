@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 //routes
-app.use('/api/users', blogRoutes);
+app.use('/api/posts', blogRoutes);
 
 //Mongoose application connection
 mongoose.set("strictQuery", false);

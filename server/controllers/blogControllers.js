@@ -4,7 +4,7 @@ const Blog = require("../models/blogModel");
 // GET all blogs
 const getBlogs = async (req, res) => {
   try {
-    const blogs = await Blogs.find().sort({ createdAt: -1 });
+    const blogs = await Blog.find().sort({ createdAt: -1 });
     res.status(200).json(blogs);
   } catch (error) {
     console.log(error.message);
